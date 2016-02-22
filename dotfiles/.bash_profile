@@ -19,9 +19,6 @@ export RBENV_ROOT="$(brew --prefix rbenv)"
 export GEM_HOME="$(brew --prefix)/opt/gems"
 export GEM_PATH="$(brew --prefix)/opt/gems"
 
-# aliases
-alias ll='ls -FGlAhp'
-
 # helpers
 
 	#extract:  Extract most know archives with one command
