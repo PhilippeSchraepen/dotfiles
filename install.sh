@@ -4,3 +4,4 @@ do
 done
 
 cp apps/.vimrc ~/.vimrc
+cp apps/.gitconfig ~/.gitconfig
