@@ -1,4 +1,6 @@
-for DOTFILE in `find ./dotfiles`
+for DOTFILE in `find ./system`
 do
 	[ -f "$DOTFILE" ] && source "$DOTFILE"
 done
+
+cp apps/.vimrc ~/.vimrc
