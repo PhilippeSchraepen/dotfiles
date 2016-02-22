@@ -1,3 +1,13 @@
+# Create a new directory and enter it
+function mk() {
+	  mkdir -p "$@" && cd "$@"
+}
+# Open man page as PDF
+function manpdf() {
+	 man -t "${1}" | open -f -a /Applications/Preview.app/
+}
+
+# Extract many types of compressed packages
 extract () {
 	if [ -f $1 ] ; then
 	  case $1 in
