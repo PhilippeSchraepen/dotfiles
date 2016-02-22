@@ -1,0 +1,10 @@
+export PATH="$HOME/bin:$PATH";
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
+# Sudoless ruby gems
+export RBENV_ROOT="$(brew --prefix rbenv)"
+export GEM_HOME="$(brew --prefix)/opt/gems"
+export GEM_PATH="$(brew --prefix)/opt/gems"
+export PATH="$HOME/.rbenv/bin:$PATH"
+
