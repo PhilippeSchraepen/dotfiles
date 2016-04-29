@@ -1,3 +1,4 @@
+set shell=/bin/bash
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -19,7 +20,7 @@ Plugin 'skammer/vim-css-color'
 Plugin 'itchyny/lightline.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdTree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -34,13 +35,17 @@ filetype plugin indent on    " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+
+" NerdTree config
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Lightline config
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ }
 set laststatus=2
+" Put your non-Plugin stuff after this line
 "personal config
 
 set mouse=a " use mouse everywhere
@@ -69,4 +74,3 @@ set tags=./tags;/
 set clipboard=unnamedplus 
 set background=dark
 syntax on
-set shell=/bin/bash
