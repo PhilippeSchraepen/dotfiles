@@ -17,6 +17,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'skammer/vim-css-color'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 Plugin 'itchyny/lightline.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'editorconfig/editorconfig-vim'
@@ -71,6 +73,6 @@ map <F12> :source /home/jan/bin/number_toggle<CR>
 map ;# :call AddIfndefGuard()<CR>
 map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude=m2mweb/files --exclude=m2mweb/test --exclude=webgui/files .<CR>
 set tags=./tags;/
-set clipboard=unnamedplus 
+set clipboard=unnamedplus
 set background=dark
 syntax on
