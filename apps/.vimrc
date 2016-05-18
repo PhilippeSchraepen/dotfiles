@@ -50,15 +50,16 @@ set laststatus=2
 " Put your non-Plugin stuff after this line
 "personal config
 
-set mouse=a " use mouse everywhere
-set wildmenu " turn on command line completion wild style
-set incsearch " BUT do highlight as you type your search phrase
-set hlsearch            " Switch on search pattern highlighting.
-set number " turn on line numbers
+set mouse=a 			" use mouse everywhere
+set wildmenu 			" turn on command line completion wild style
+set incsearch 		" BUT do highlight as you type your search phrase
+set hlsearch  		" Switch on search pattern highlighting.
+set number 				" turn on line numbers
+set relativenumber
 set numberwidth=5 " We are good up to 99999 lines
-set showmatch " show matching brackets
-set autoindent " use the current line's indent level to set the indent level of new lines
-set smartindent " attempt to intelligently guess the indent level of any new line based on the previous line
+set showmatch 		" show matching brackets
+set autoindent 		" use the current line's indent level to set the indent level of new lines
+set smartindent 	" attempt to intelligently guess the indent level of any new line based on the previous line
 set tabstop=2
 set shiftwidth=2
 set ignorecase
