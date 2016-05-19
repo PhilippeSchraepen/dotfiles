@@ -22,7 +22,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'itchyny/lightline.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'scrooloose/nerdTree'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
