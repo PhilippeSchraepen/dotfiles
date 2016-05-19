@@ -38,10 +38,6 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 
-" NerdTree config
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
 " Lightline config
 let g:lightline = {
       \ 'colorscheme': 'wombat',
