@@ -14,11 +14,11 @@ Plugin 'gmarik/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'pangloss/vim-javascript'
-Plugin 'kchmck/vim-coffee-script'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'sheerun/vim-polyglot'
 Plugin 'skammer/vim-css-color'
 Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'itchyny/lightline.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'editorconfig/editorconfig-vim'
@@ -72,4 +72,12 @@ map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude=m2mweb/
 set tags=./tags;/
 set clipboard=unnamedplus
 set background=dark
-syntax on
+syntax enable
+
+"	macvim
+if has("gui_running")
+  colorscheme solarized 
+  set bs=2
+  set ai
+  set ruler
+endif
