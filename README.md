@@ -7,8 +7,3 @@ chmod +x install.sh
 ./install.sh
 ```
 
-To source vimrc:
-
-```bash
-:source ~/.vimrc
-```
