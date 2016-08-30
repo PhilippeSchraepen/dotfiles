@@ -4,15 +4,16 @@
 	name = Philippe Schraepen
 	email = mail@phill.be
 [core]
-	editor = /usr/bin/vim
+	editor = mvim -f
 	excludesfile = /Users/philippeschraepen/.gitignore_global
 [push]
 	default = upstream
 [credential]
-	helper = osxkeychain
+	helper = cache --timeout=500
 [alias]
 	llog = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 	llogg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+	up = "!git remote update -p; git merge --ff-only @{u}"
 [log]
 	  date = relative
 [format]
