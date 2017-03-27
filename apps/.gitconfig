@@ -2,7 +2,7 @@
 	insteadOf = git://
 [user]
 	name = Philippe Schraepen
-	email = mail@phill.be
+	email = 
 [core]
 	editor = mvim -f
 	excludesfile = /Users/philippeschraepen/.gitignore_global
